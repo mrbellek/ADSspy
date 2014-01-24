@@ -1,0 +1,65 @@
+[not yet]
+v1.12 - Added Q30lsldxJoudresxAaaqpcawXc to the safelist
+
+[05/02/06]
+v1.11 - Fixed a bug where max 72 streams in one file were found and others
+	were ignored. Enlarged buffer to allow for ca. max 7000 streams.
+
+[17/12/05]
+v1.10 - Changed the UI slightly. Added option to scan only a selected folder.
+
+[30/11/05]
+v1.09.2 - The root folder was not scanned for streams. Added.
+
+[14/08/05]
+v1.09.1 - Fixed bug where GetVolumeInformation returned incorrect data
+	when drive path did not include trailing backslash.
+
+[15/07/05]
+v1.09 - Fix a bug where ADS Spy would refuse to run when drive with
+	Windows volume was not NTFS, even if other volumes were.
+
+[11/01/05]
+v1.08 - ?
+
+[??/09/04]
+v1.07 - Version number is now displayed in titlebar. Scan button changes to
+	'abort scan' during scan now.
+
+[05/09/04]
+v1.06 - Added proper handling for ADS streams which fail to be removed.
+
+[03/09/04]
+v1.05 - Added ':Zone.Identifier:' to ignorelist. This stream is present in files
+	downloaded with IE6 SP2 on XP SP2 systems and provides zone security
+	information on them.
+
+[29/08/04]
+v1.04 - Improved displaying of streams with binary data (NULL characters are
+	removed, this doesn't affect saving the stream to disk though).
+	Saving a stream contents to disk is now done directly from the stream
+	instead of just copying displayed contents to a file.
+	Added option to calculate MD5 checksum of stream contents in scan
+	results list (disabled by default).
+	Changed 'save contents' dialog box filter to have 'Binary files (*.bin)'
+	as default, instead of 'Text files (*.txt)'.
+
+[28/08/04]
+v1.03 - Changed checkbox to exclude ':encryptable:' and ':SummaryInformation:'
+	and renamed it 'ignore system info streams'.
+	Fixed a bug when viewing a stream that contains binary data (added
+	warning).
+	Folders are now scanned for ADS streams as well. :)
+
+[28/08/04]
+v1.02 - Added right-click option to scan results, allowing scan results to be
+	saved to disk and viewed, where the stream can be copied, saved and
+	edited in Wordpad.
+	Added checkbox option to ignore ':encryptable:' streams.
+	Added ADS Spy to download section on Merijn.org.
+
+[27/08/04]
+v1.01 - Added 'quick scan' option, when unchecked ADS Spy scans entire disk.
+
+[27/08/04]
+v1.00 - Original release.
