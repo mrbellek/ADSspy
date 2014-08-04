@@ -680,7 +680,7 @@ Private Function GetNTFSDrives$()
         If (lDrives And 2 ^ i) Then
             sDrive = Chr(Asc("A") + i) & ":\"
             lDriveType = GetDriveType(sDrive)
-            If lDriveType = DRIVE_FIXED Or lDriveType = DRIVE_RAMDISK Then
+            If lDriveType = DRIVE_FIXED Or lDriveType = DRIVE_RAMDISK Or lDriveType = DRIVE_REMOVABLE Then
                 sVolName = String(260, 0)
                 sVolFileSys = String(260, 0)
                 lFlags = 0
